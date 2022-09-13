@@ -1,0 +1,873 @@
+
+
+
+action="login.php"
+
+window.location.href = "hello.php";
+
+
+
+
+<!DOCTYPE html>
+<html>   
+<head>
+    
+</head>
+
+<body>
+    <p>hello</p>
+    <img src=<?php echo $row["pic"]; ?>>
+
+</body>
+</html>
+
+
+<?php echo '<img src="data:image;base64,'.base64_encode($row["pic"]).'" alt="image" style="width: 100px; height: 100px:" >'; ?>
+
+        <h3>Properties</h3>
+        <img id="F" src="images/properties/web/Prev_Arrow.png">
+        <img id="G" src="images/properties/web/Next_Arrow.png">
+        <ul>
+            <li>
+                <a href="details.php"><img id="K" src="images/uploads/<?php echo $image1?>"></a>
+                <a href="details.php" style="text-decoration:none;"><p id="p4"><?php echo $name1?></p></a><br>
+                <p id="p5">₹ <?php echo $price1?></p><br>
+                <img id="H" src="images/properties/web/Bed_small.png"><p id="p1">Beds</p><h5><?php echo $bed1; ?></h5><br>
+                <img id="I" src="images/properties/web/bath_small.png"><p id="p2">Bathrooms</p><h6><?php echo $bath1; ?></h6><br>
+                <img id="J" src="images/properties/web/map_small.png"><p id="p3"><?php echo $location1.", ".$city1; ?></p>
+            </li>
+            <li>
+                <a href="details.php"><img id="K" src="images/uploads/<?php echo $image2?>"></a>
+                <a href="details.php" style="text-decoration:none;"><p id="p4"><?php echo $name2?></p></a><br>
+                <p id="p5">₹ <?php echo $price2?></p><br>
+                <img id="H" src="images/properties/web/Bed_small.png"><p id="p1">Beds</p><h5><?php echo $bed2; ?></h5><br>
+                <img id="I" src="images/properties/web/bath_small.png"><p id="p2">Bathrooms</p><h6><?php echo $bath2; ?></h6><br>
+                <img id="J" src="images/properties/web/map_small.png"><p id="p3"><?php echo $location2.", ".$city2; ?></p>
+            </li>
+            <li>
+                <a href="details.php"><img id="K" src="images/uploads/<?php echo $image3?>"></a>
+                <a href="details.php" style="text-decoration:none;"><p id="p4"><?php echo $name3?></p></a><br>
+                <p id="p5">₹ <?php echo $price3?></p><br>
+                <img id="H" src="images/properties/web/Bed_small.png"><p id="p1">Beds</p><h5><?php echo $bed3; ?></h5><br>
+                <img id="I" src="images/properties/web/bath_small.png"><p id="p2">Bathrooms</p><h6><?php echo $bath3; ?></h6><br>
+                <img id="J" src="images/properties/web/map_small.png"><p id="p3"><?php echo $location3.", ".$city3; ?></p>
+            </li>
+            <li>
+                <a href="details.php"><img id="K" src="images/uploads/<?php echo $image4?>"></a>
+                <a href="details.php" style="text-decoration:none;"><p id="p4"><?php echo $name4?></p></a><br>
+                <p id="p5">₹ <?php echo $price4?></p><br>
+                <img id="H" src="images/properties/web/Bed_small.png"><p id="p1">Beds</p><h5><?php echo $bed4; ?></h5><br>
+                <img id="I" src="images/properties/web/bath_small.png"><p id="p2">Bathrooms</p><h6><?php echo $bath4; ?></h6><br>
+                <img id="J" src="images/properties/web/map_small.png"><p id="p3"><?php echo $location4.", ".$city4; ?></p>
+            </li>
+        </ul>
+
+
+
+
+
+
+
+    
+    document.getElementById("myText").innerHTML = <?php echo (json_encode($_SESSION["username"])); ?>;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <?php
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> Zillow:Real Estate, Apartments, Mortgages & Home Values </title>
+    <link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body onload="myFunction2()">
+     
+    <img id="A" src="images/web/Bg.png" alt="House">  
+    <img id="C" src="images/web/g+.png" alt="House">
+    <img id="D" src="images/web/twitter.png" alt="House">
+    <img id="E" src="images/web/fb.png" alt="House">
+    <p id="copywrite">© 2016. realbuy.com. All rights reserved.</p>
+
+
+    <div class="topnav">
+        <a href="#" class="button"><span id="myText2"></span></a>
+        <a href="properties.php">Properties</a>
+        <a href="index.php">Home</a>
+       
+        
+    </div>
+
+    <script>
+        function myFunction2() {
+            var number2 = <?php echo(json_encode($_SESSION["username"])); ?>;
+            document.getElementById("myText2").innerHTML = number2;
+            }
+    </script>
+
+  
+</body>
+</html>
+
+
+
+
+
+          addproperty.onclick = function() {
+      var check=<?php
+        if(!isset($_SESSION["username"])){ 
+          echo 1;
+        }else{
+          echo 2;
+        } 
+        ?>;
+      if(check==1){
+      modal.style.display = "block";
+      }else{
+      modal3.style.display = "block";
+      }
+    }
+
+
+        addproperty.onclick = function() {
+      var check=<?php
+        if(!isset($_SESSION["username"])){ 
+          echo 1;
+        }else{
+          echo 2;
+        } 
+        ?>;
+      if(check==1){
+      modal.style.display = "block";
+      }else{
+      modal3.style.display = "block";
+      }
+    }
+
+
+
+
+
+
+  
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  
+  
+
+
+
+
+     var check=<?php
+          if(!isset($_SESSION["username"])){ 
+            echo 1;
+          }else{
+            echo 2;
+          } 
+          ?>;
+
+
+
+
+
+
+
+
+        if((!isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+        $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails LIMIT $va,4";
+        $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails LIMIT $va2,4";
+    }elseif((isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+        $check=$_GET['city'];
+        $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' LIMIT $va,4 ";
+        $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' AND sortby='$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' AND sortby='$srby' LIMIT $va2,4 ";
+    }elseif((!isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE propertytype='$protype' AND purchasetype='$purtype' AND sortby='$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE propertytype='$protype' AND purchasetype='$purtype' AND sortby='$srby' LIMIT $va2,4 ";
+    }elseif((!isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE purchasetype='$purtype' AND sortby='$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE purchasetype='$purtype' AND sortby='$srby' LIMIT $va2,4 ";
+    }
+  
+
+
+
+
+ 
+
+
+
+
+
+
+    if((!isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails order by addedon desc LIMIT $va,4";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails order by addedon desc LIMIT $va2,4";
+    }elseif((isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $check=$_GET['city'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' order by addedon desc LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' order by addedon desc LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' order by addedon desc LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' order by addedon desc LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((!isset($_GET['sortby']))||($_GET['sortby']==0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' order by addedon desc LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' order by addedon desc LIMIT $va2,4 ";
+    }elseif((isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $check=$_GET['city'];$protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' order by price '$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE city='$check' AND propertytype='$protype' AND purchasetype='$purtype' order by price '$srby' LIMIT $va2,4 ";
+    }elseif((!isset($_GET['city']))&&((isset($_GET['propertytype']))&&($_GET['propertytype']!=0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $protype=$_GET['propertytype'];$purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE propertytype='$protype' AND purchasetype='$purtype' order by price '$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE propertytype='$protype' AND purchasetype='$purtype' order by price '$srby' LIMIT $va2,4 ";
+    }elseif((!isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((isset($_GET['purchasetype']))||($_GET['purchasetype']!=0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $purtype=$_GET['purchasetype'];$srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE purchasetype='$purtype' order by price '$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails WHERE purchasetype='$purtype' order by price '$srby' LIMIT $va2,4 ";
+    }elseif((!isset($_GET['city']))&&((!isset($_GET['propertytype']))||($_GET['propertytype']==0))&&((!isset($_GET['purchasetype']))||($_GET['purchasetype']==0))&&((isset($_GET['sortby']))||($_GET['sortby']!=0))){
+      $srby=$_GET['sortby'];
+      $sql1 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails order by price '$srby' LIMIT $va,4 ";
+      $sql2 = "SELECT *,monthname(addedon),day(addedon),year(addedon) FROM propertydetails order by price '$srby' LIMIT $va2,4 ";
+    }
+
+
+
+
+
+
+<?php if(($_GET['sortby']=="0")||(!isset($_GET['sortby']))){
+                echo "0";
+              }else{
+                echo $_GET['sortby'];
+              } ?>
+
+
+              <?php if(($_GET['sortby']=="0")||(!isset($_GET['sortby']))){
+                echo "SORT BY";
+              }else{
+                echo $_GET['sortby'];
+              } ?>
+
+
+
+
+
+&propertytype=<?php if(($protype!=null)&&($protype!='0')){echo $protype;}?>&purchasetype=<?php if(($purtype!=null)&&($purtype!='0')){echo $purtype;}?>&sortby=<?php if(($srby!=null)&&($srby!='0')){echo $srby;}?>
+
+
+
+
+
+&city=<?php if($check!=null){echo $check;}?>&propertytype=<?php if(($protype!=null)&&($protype!='0')){echo $protype;}?>&purchasetype=<?php if(($purtype!=null)&&($purtype!='0')){echo $purtype;}?>&sortby=<?php if(($srby!=null)&&($srby!='0')){echo $srby;}?>
+
+
+
+
+&city=<?php if($check!=null){echo $check;}?>&propertytype=<?php if(($protype!=null)&&($protype!='0')){echo $protype;}else{echo 0;}?>&purchasetype=<?php if(($purtype!=null)&&($purtype!='0')){echo $purtype;}else{echo 0;}?>&sortby=<?php if(($srby!=null)&&($srby!='0')){echo $srby;}else{ echo 0;}?>
+
+
+
+&city=<?php if($check!=null){echo $check;}?>
+
+
+
+<option value="<?php if(($_GET['sortby']=="0")||(!isset($_GET['sortby']))){
+                echo "0";
+              }else{
+                echo $_GET['purchasetype'];
+              } ?>"><?php if(($_GET['sortby']=="0")||(!isset($_GET['sortby']))){
+                echo "SORT BY";
+              }elseif($_GET['sortby']=="1"){
+                echo "MOST RECENT";
+                
+              }elseif($_GET['sortby']=="asc"){
+                echo "PRICE LOW TO HIGH";               
+              }else{
+                echo "PRICE HIGH TO LOW";
+              } ?>
+
+
+
+
+<option value="0">SORT BY</option>
+
+
+
+addedon desc
+
+
+    if(!isset($_GET['city'])){
+      $check=0;
+    }else{
+      $check=$_GET['city'];
+    }
+    
+                <span id="detailpurchasetypepara"> ON ';
+                if($purchasetype[$i]=='SELL'){
+                  echo 'SALE';
+                }else{
+                  echo 'RENT';
+                }
+                echo  '</span>    
+
+
+
+
+if((!isset($_GET['city']))&&(!isset($check))){
+      $check='0';
+    }elseif(isset($_GET['city'])&&(strlen($_GET['city'])>='1')){
+      $check=$_GET['city'];
+    }else{
+      $check=$_GET['check'];
+    }
+    
+
+
+
+
+
+
+
+
+
+              if((isset($_GET['sortby']))&&(($_GET['sortby']!='0')&&($_GET['sortby']!='1'))){
+      $sql4 = "SELECT askingprice.* FROM ($sql3)askingprice order by askingprice $srby ";
+      
+    }else{
+      $sql4 = "SELECT askingprice.* FROM ($sql3)askingprice order by addedon desc";
+      
+    }
+    if(isset($_GET['city'])){
+      $sql1="SELECT * FROM propertydetails where city='$check'" ;
+    }else{
+      $sql1="SELECT * FROM propertydetails";
+    }
+    if((isset($_GET['propertytype']))&&($_GET['propertytype']!='0')){
+      $sql2="SELECT askingprice.* FROM ($sql1)askingprice where propertytype='$protype'" ;
+    }else{
+      $sql2="SELECT askingprice.* FROM ($sql1)askingprice " ;
+    }
+    if((isset($_GET['purchasetype']))&&($_GET['purchasetype']!='0')){
+      $sql3="SELECT askingprice.* FROM ($sql2)askingprice where purpose='$purtype'" ;
+    }else{
+      $sql3="SELECT askingprice.* FROM ($sql2)askingprice ";
+    }
+
+    if((isset($_GET['sortby']))&&(($_GET['sortby']!='0')&&($_GET['sortby']!='1'))){
+      $sql1 = "SELECT * FROM propertydetails order by askingprice $srby ";
+      
+    }else{
+      $sql1 = "SELECT * FROM propertydetails order by addedon desc";
+      
+    }
+
+
+
+
+
+
+
+        
+       
+        
+      
+      <?php
+        for($i=0;$i<$count2;$i++){
+          echo '
+          <ul id="myaccountul">
+  
+            <li id="myshortlistli">
+              <a href="details.php?imagelocation='.$id2[$i] .'&lattitude='.$lattitude2[$i].'&longitude='.$longitude2[$i].'"><img id="K" src="images/useruploads/'.$image2[$i].'"></a><br>
+
+              <div id="editpropertydeletediv">
+                <img onclick="openremoveshortlist('.$id2[$i].')" id="editpropertydelete" src="images/myaccount/delete-button-3x.png" alt="image" />
+              </div>
+              <div class="p555">
+                <p class="p5">₹ ' .$price2[$i] .'</p><br>
+                <p class="p55">TYPE & LOCATION: </p><span id="restdofetails">'.$propertytype2[$i].'/'.$location2[$i].'</span> <br>
+                <p class="p55">PLOT AREA: </p><span id="restdofetails"> '.$builtuparea2[$i].' ' .$builtupareaunit2[$i] .'</span><br>
+                <p class="p55">CITY:</p><span id="restdofetails"> '.$city2[$i].'</span><br>
+                <p class="p55">DESCRIPTION: </p><span id="restdofetails"> '.$transactiontype2[$i].'/'.$availability2[$i].'/'.$description2[$i].'</span><br>
+                <p class="p55">POSTED:</p><span id="restdofetails"> '.$month2[$i].' ' .$day2[$i].', '.$year2[$i].'</span><br>
+              </div>
+              <div class="contact">
+                <a href="#" onclick="initMap('.$lattitude[$i].','.$longitude[$i].')"><img id="mail" src="images/contact/web/Mail_white.png"></a>
+                <a href="design.php" class="contactdetails"style="text-decoration:none;">SEND MAIL   &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;   </a>
+                <a href="design.php"><img id="mail" src="images/contact/web/Call_white.png"></a>
+                <a href="design.php" class="contactdetails" style="text-decoration:none;">PHONE NUMBER  &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;  </a>
+                <a href="design.php"><img id="mail" src="images/contact/web/Fav_white.png"></a>
+                <a href="design.php" class="contactdetails" style="text-decoration:none;">SHORTLIST    &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; </a>
+                <a href="#?iddd='.$i .'" class="clickmap1" onclick="openmap('.$lattitude2[$i].','.$longitude2[$i] .');initMap('.$lattitude2[$i].','.$longitude2[$i].');"><img id="mail" src="images/contact/web/Map_white.png"></a>
+                <a href="#" id="clickmap2" onclick="openmap('.$lattitude2[$i].','.$longitude2[$i] .');initMap('.$lattitude2[$i].','.$longitude2[$i].');" class="contactdetails" style="text-decoration:none;">MAP    </a>
+              </div>
+              ';if($purchasetype2[$i]=='SELL'){
+                  echo '<div id="detailpurchasetype2">
+                          <span > ON SALE </span>
+                        </div>';
+                  }else{
+                    echo '<div id="detailpurchasetype">
+                            <span > ON RENT </span>
+                          </div>';
+                  }     
+                echo  '
+                
+            </li>
+       
+          </ul>
+          '; 
+        }
+
+        ?>
+
+
+
+
+
+        $i=0;
+  while($row1 = $result2->fetch_assoc()) {
+    
+    $id2[$i]=$row1["id"];
+    $name2[$i]=$row1["name"];
+    $image2[$i]=$row1["imagename"];
+    setlocale(LC_MONETARY, 'en_IN');
+
+    $price2[$i]=$row1["askingprice"];
+    $price2[$i]= preg_replace("/(\d+?)(?=(\d\d)+(\d)(?!\d))(\.\d+)?/i", "$1,", $price2[$i]);
+    
+    $propertytype2[$i]=$row1["propertytype"];
+    $purchasetype2[$i]=strtoupper($row1["purpose"]);
+    $builtuparea2[$i]=$row1["builtuparea"];
+    $builtupareaunit2[$i]=$row1["builtupareaunit"];
+    $transactiontype2[$i]=$row1["transactiontype"];
+    $availability2[$i]=$row1["availability"];
+    $description2[$i]=$row1["description"];
+    $month2[$i]=$row1["monthname(addedon)"];
+    $day2[$i]=$row1["day(addedon)"];
+    $year2[$i]=$row1["year(addedon)"];
+    $bed2[$i]=$row1["bedrooms"];
+    $bath2[$i]=$row1["bathrooms"];
+    $location2[$i]=$row1["location"];
+    $city2[$i]=$row1["city"];
+    $lattitude2[$i]=$row1["lattitude"];
+    $longitude2[$i]=$row1["longitude"];
+    ++$i;
+    ++$count2;
+  }
+        
+
+            <div>
+            <label for="phoneno"><p id="signupphone">Phone No.</p></label>
+            <span id="phonenoerror" class="text-danger font-weight-bold"></span><br>
+            <input id='phone' type="tel"  name="phoneno" ><br><br> 
+            </div>
+            <div>
+            <label for="password"><p id="signuppass">Password</p></label>
+            <span id="passworderror" class="text-danger font-weight-bold"></span><br>
+            <input id='pass' type="password"  name="password" ><br><br> 
+            </div> 
+            <div>
+            <label for="confpassword"><p id="signupconfpass">Confirm Password</p></label>
+            <span id="confpassworderror" class="text-danger font-weight-bold"></span><br>
+            <input id='confpass' type="password"  name="confpassword" ><br><br> 
+            </div> 
+            <button id="login2" type="submit">SAVE</button>
+      
+
+
+
+
+
+.bedroomdrop{
+    /*display: none;*/
+    position: absolute;
+    top: 20%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+select {
+    display: none; /*hide original SELECT element: */
+  }
+.select-selected6 {
+    background-color: rgba(22, 22, 22, 1);
+  }
+
+/* Style the arrow inside the select element: */
+.select-selected6:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgba(152, 152, 152, 1) transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected6.select-arrow-active:after {
+    border-color: transparent transparent rgba(152, 152, 152, 1) transparent;
+    top: 7px;
+  }
+  
+   /* style the items (options), including the selected item: */
+   .select-selected6 {
+    position: relative;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid ;
+    border-color:  rgba(140, 140, 140, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    height: 28px;   
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    
+  }
+  .select-items6 div{
+    cursor: pointer;
+    padding: 9px 0px;
+    border: 1px solid ;
+    border-color:  rgba(140, 140, 140, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    text-align: center; 
+  }
+  .select-items6 {
+    position: absolute;
+    background-color: rgba(22, 22, 22, 1);   
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .select-hide {
+    display: none;
+  }
+
+
+#areadiv{
+    position: absolute;
+    top: 27%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+
+.builtuparea {
+    position: absolute;
+    top: 33%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotlength {
+    position: absolute;
+    top: 33%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotarea {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.carpetarea {
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotbreadth {
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.builtupareaunit{
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotlengthunit{
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotareaunit{
+    position: absolute;
+    top: 33%;
+    left: 77.5%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.carpetareaunit{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotbreadthunit{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+
+#transactiontypediv{
+    position: absolute;
+    top: 47.2%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#resale{
+    position: relative;
+    top: 31%;
+    left: 27.5%;
+    height: 26px;
+    width: 26px;
+    
+}
+#newbooking{
+    position: relative;
+    top: 31%;
+    left: 48.8%;
+    height: 26px;
+    width: 26px;
+
+}
+.propertyfloor{
+    position: absolute;
+    top: 58%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.opensides{
+    position: absolute;
+    top: 58%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.ownership{
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.totalfloors{
+    position: absolute;
+    top: 65.3%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+    
+}
+.boundarywallmade{
+    position: absolute;
+    top: 65.3%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+    
+}
+#availabilitydiv{
+    position: absolute;
+    top: 72%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#readytomove{
+    position: absolute;
+    top: 75%;
+    left: 7.5%;
+    height: 26px;
+    width: 26px;
+    
+}
+#underconstruction{
+    position: absolute;
+    top: 75%;
+    left: 48.8%;
+    height: 26px;
+    width: 26px;
+
+}
+.descriptionn {
+    position: absolute;
+    top: 81%;
+    left: 4.5%;
+    height: 40px;
+    width: 331px;
+    padding-top: 7px;
+    border: 1px solid ;
+    padding-left:16px;
+    padding-bottom: 40px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+#postad{
+    position: absolute;
+    top: 93%;
+    left: 4.5%;
+    height: 45px;
+    width: 120px;
+    background-color: rgba(47, 181, 110, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);    
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+}

@@ -1,0 +1,3152 @@
+
+#A{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#B{
+    position: absolute;
+    top: 61px;
+    left: 100px;
+    height: 128px;
+    width: 320px;
+}
+
+#C{
+    position: absolute;
+    top: 930px;
+    left: 200px;
+    height: 30px;
+    width: 30px;
+}
+
+#D{
+    position: absolute;
+    top: 930px;
+    left: 150px;
+    height: 30px;
+    width: 30px;
+}
+
+#E{
+   position: absolute;
+    top: 930px;
+    left: 100px;
+    height: 30px;
+    width: 30px; 
+}
+#copywrite{
+    position: absolute;
+    top: 920px;
+    left: 250px;
+    height: 14px;
+    width: 192px;
+    font-family: 'Antipasto';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+h1 {
+    position: absolute;
+    top: 100px; 
+    left: 40%;  
+    font-family: Antipasto;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);    
+}
+
+p{
+    position: absolute;
+    top: 200px;
+    left: 601px;   
+    width: 641px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+}
+
+.topnav{
+    text-align: right;
+    position: absolute;
+    top: 4%;
+    left: 1230px;
+    height: 44px;
+    width: 600px;   
+    overflow: hidden;
+
+
+}
+
+.topnav a {
+    float: right;
+    padding: 14px 16px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: 'Antipasto';
+    height: 17px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.topnav a:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(47, 181, 110, 1);
+}
+
+.form{
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    height: 500px;
+    width: 660px;   
+
+
+}
+
+#buy{
+    position: absolute;
+    top: -21px;
+    left: 0px;
+    height: 28px;
+    width: 65px;
+    padding: 0px;
+    background-color: rgba(105, 121, 142, 1);  
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(240, 240, 240, 1);   
+    text-align: center; 
+    padding-top: 10px;
+    cursor: pointer;
+}
+[type=radio]:checked + #buy{
+    background-color: rgba(39, 53, 71, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+#rent{
+    position: absolute;
+    top: -21px;
+    left: 68px;
+    height: 28px;
+    width: 65px;
+    padding: 0px;
+    background-color: rgba(105, 121, 142, 1); 
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(240, 240, 240, 1);  
+    text-align: center; 
+    padding-top: 10px;
+    cursor: pointer;
+}
+[type=radio]:checked + #rent{
+    background-color: rgba(39, 53, 71, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+/* The container must be positioned relative: */
+.custom-select{
+    position: absolute;
+
+
+    top: 40px;
+    left: 350px;
+    height: 48px;
+    width: 180px;
+
+
+}
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+.select-selected {
+    
+    height: 19.7px;
+    background-color: rgba(240, 240, 240, 1);
+ 
+  }
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top:20px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color:  rgba(152, 152, 152, 1) transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent  rgba(152, 152, 152, 1) transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 12px 16px;
+    padding-top: 14.3px;
+    top: 8px;
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center; 
+       
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: rgba(240, 240, 240, 1);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+#subbt{
+    position: absolute;
+    top: 40px; 
+    left: 528px; 
+    height: 48px;
+    width: 120px;
+    background-color: rgba(47, 181, 110, 1);
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);   
+}
+
+
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+
+.loginhead{
+    position: absolute;
+    height: 64px;
+    width: 500px;
+    background-color: rgba(43, 43, 43, 1);
+}
+.loginhead p{
+    top: -12px;
+    left: 43%;
+
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 7px;
+    left: 90%;
+    color: rgba(216, 216, 216, 1);   
+    font-size: 37px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+
+  
+
+/* Modal Content/Box */
+.modal-content {
+    position: absolute;
+    top: 60px;
+    height: 481px;
+    width: 500px;
+    background-color: rgba(30, 30, 30, 1);
+}
+.form2{
+    position: absolute;
+}
+.form2 #loginname{
+    position: absolute;
+    top: 30px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+.form2 #loginpass{
+    position: absolute;
+    top: 110px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+
+.form2 #namee{
+    position: relative;    
+    top: 55px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+.form2 #passs{ 
+    top: 153px;
+    position: absolute; 
+    left: 23%;
+    height: 30px;
+    color:white;
+    width: 334px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#login{
+    top: 215px;
+    position: absolute; 
+    left: 23%;
+    height: 44px;
+    width: 339px;
+    background-color: rgba(40, 140, 86, 1);
+    font-family: 'Antipasto';
+    font-size: 22px;
+    color: rgba(216, 216, 216, 1);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+}
+
+
+.form2 #forgot{
+    top: 243px;
+    position: absolute; 
+    left: 87%;
+    height: 17px;
+    width: 150px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(216, 216, 216, 1);
+    cursor: pointer;
+}
+#or{
+    top: 293px;
+    position: absolute; 
+    left: 70%;
+    height: 16px;
+    width: 15px;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+#loginfb{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+}
+#logintwi{
+    position: absolute;
+    top: 350px;
+    left: 68%;
+    height: 30px;
+    width: 30px;
+}
+#loging{
+    position: absolute;
+    top: 350px;
+    left: 86%;
+    height: 30px;
+    width: 30px;
+}
+.form2 #signup{
+    position: absolute;
+    top: 400px;
+    left: 35%;
+    height: 17px;
+    width: 258px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(216, 216, 216, 1);
+}
+.form2 #signup2{
+    position: absolute;
+    text-decoration: underline;
+    top: 400px;
+    left: 84%;
+    height: 17px;
+    width: 258px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(216, 216, 216, 1);
+}
+
+
+.modal2 {
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+
+.signuphead{
+    position: absolute;
+    height: 64px;
+    width: 500px;
+    background-color: rgba(43, 43, 43, 1);
+}
+.signuphead p{
+    top: -12px;
+    left: 43%;
+
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+/* The Close Button */
+.close2 {
+    position: absolute;
+    top: 7px;
+    left: 90%;
+    color: rgba(216, 216, 216, 1);   
+    font-size: 37px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+
+  
+
+/* Modal Content/Box */
+.modal-content2 {
+    position: absolute;
+    top: 60px;
+    height: 481px;
+    width: 500px;
+    background-color: rgba(30, 30, 30, 1);
+}
+.form3{
+    position: absolute;
+}
+
+/* Modal Content/Box */
+
+#signupname{
+    position: absolute;
+    top: 2px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#nameerror{
+    position: relative;
+    top: 24px;
+    display: inline;
+    left: 53%;
+    height: 17px;
+    font-family: 'Antipasto';
+
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+#name{    
+    position: relative;    
+    top: 27px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#signupemail{
+    position: absolute;
+    top: 77px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#emailerror{
+    position: relative;
+    top: 47px;
+    left: 53%;
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    font-family: 'Antipasto';
+    color: red;
+    font-weight: bold;
+}
+#email{    
+    position: absolute;   
+    top: 120px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#signupphone{
+    position: absolute;
+    top: 145px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#phonenoerror{
+    position: relative;
+    top: 80px;
+    left: 53%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#phone{    
+    position: absolute;    
+    top: 190px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#signuppass{
+    position: absolute;
+    top: 215px;
+    left: 23%;
+    height: 17px;
+    width: 72px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#passworderror{
+    position: relative;
+    top: 92px;
+    left: 53%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#pass{    
+    position: absolute;    
+    top: 260px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#signupconfpass{
+    position: absolute;
+    top: 285px;
+    left: 23%;
+    height: 17px;
+    width: 200px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#confpassworderror{
+    position: relative;
+    top: 105px;
+    left: 58%;
+
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#confpass{    
+    position: absolute;    
+    top: 330px;
+    left: 23%;
+    height: 30px;
+    width: 334px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+
+
+#login2{
+    position: absolute;
+    top: 380px;    
+    left: 23%;
+    height: 30px;
+    width: 338px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(40, 140, 86, 1);
+    font-family: 'Antipasto';
+    font-size: 18px;
+    color: rgba(216, 216, 216, 1);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#or2{
+    top: 400px;
+    position: absolute; 
+    left: 70%;
+    height: 16px;
+    width: 15px;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+#loginfb2{
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+}
+#logintwi2{
+    position: absolute;
+    top: 440px;
+    left: 68%;
+    height: 30px;
+    width: 30px;
+}
+#loging2{
+    position: absolute;
+    top: 440px;
+    left: 86%;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROPERTIES */
+#realbuylogo2{
+    position: absolute;
+    top: 30px;
+    left: 29px;
+    height: 75px;
+    width: 192px;
+}
+.outline{
+    position: absolute;
+    background-color: rgba(22, 22, 22, 1);
+    overflow: hidden;
+    width: 100%;
+    height: 82%;
+    top: 11%;
+    left: 0px;
+    background-color: rgba(11, 11, 11, 1);
+}
+.properties{
+    position: absolute;
+    background-color: rgba(22, 22, 22, 1);
+    overflow: hidden;
+    width: 100%;
+    height: 98.7%;
+    top: 1.3%;
+    left: 0px;
+   
+}
+.properties h3{
+    position: absolute;
+    color: rgba(47, 181, 110, 1);
+    font-family: 'Antipasto';
+    top: 0%;
+    left: 2.3%;   
+    font-size: 24px;
+    display: inline;
+}
+
+.menu{
+    position: relative;
+    top: 70px;
+    left: 10px;
+    height: 80px;
+    width: 98.5%;
+
+}
+
+#location{
+    position: relative;
+    top: 10px;
+    left: 9px;
+    text-align: center;
+    height: 45px;
+    width: 180px;
+    
+    letter-spacing: 1px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    background-color: rgba(240, 240, 240, 1);
+    color: rgba(51, 51, 51, 1);
+}
+.propertytypedrop{
+    position: relative;
+    top: -41px;
+   
+    left: 195px;
+    letter-spacing: 1px;
+    height: 51px;
+    width: 180px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+
+    font-family: 'Antipasto';
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+
+
+
+.propertytypedrop select {
+    display: none; /*hide original SELECT element: */
+  }
+.select-selected2 {
+    background-color: rgba(240, 240, 240, 1);
+    height: 20px;
+
+  }
+/* Style the arrow inside the select element: */
+.select-selected2:after {
+    position: absolute;
+    content: "";
+    top: 21px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgba(152, 152, 152, 1) transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected2.select-arrow-active:after {
+    border-color: transparent transparent rgba(152, 152, 152, 1) transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected2 {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 8px 16px;
+    padding: 15px 16px;
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center; 
+  }
+
+.purchasetypedrop{
+    position: relative;
+    top: -92px;
+    
+    left: 374px;
+    letter-spacing: 1px;
+    height: 50.6px;
+    width: 180px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    background-color: white;
+}
+
+.sortbydrop{
+    position: relative;
+    top: -143px;
+    
+    left: 553px;
+    letter-spacing: 1px;
+    height: 51px;
+    width: 180px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    background-color: yellow;
+    
+    
+}
+
+#searchproperty{
+    position: relative;
+    top: -194px;
+    left: 732px;
+    letter-spacing: 1px;
+    height: 52px;
+    width: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 181, 110, 1);
+}
+#F{
+    
+    position: relative;
+    left: 1710px;
+    top: -220px;
+    height: 13px;
+    width: 21px;
+}
+#G{
+    position: relative;
+    left: 1720px;
+    top: -220px;
+    height: 13px;
+    width: 21px;
+}
+ul{
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    position: relative;
+    list-style: none;
+    top: 68px;
+    float: left;
+    width: 47.5%;
+    height: 270px;
+    padding-bottom: 15px;
+    margin: 20px 20px 0px 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(56, 55, 55, 1);
+}
+
+#K{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    height: 182px;
+    width: 280px;
+}
+
+
+.p555{
+    position: relative;
+    top: -170px;
+    left: 300px;
+    height: 182px;
+    width: 540px;
+
+
+}
+.p5{
+    position: relative;
+    top: -5px;
+    left: 12px; 
+    display: inline;
+    font-family: 'PingFangSC-Regular';
+    color:rgba(47, 181, 110, 1);
+}
+.p55{
+    position: relative;
+    top: -3px;
+    left: 12px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-family: 'Antipasto';
+    padding-left: 5px; 
+    display: inline;
+ 
+    font-size: 16px;
+    color: rgba(176, 176, 176, 1);
+}
+#restdofetails{
+    position: relative;
+    font-family: 'Antipasto';
+    top: -2px;
+    left: 8px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+.contact{
+    position: relative;
+    top: -147px;
+    left: 0px;
+    height: 64px;
+    width: 100%;  
+    background-color: rgba(35, 35, 35, 1);
+}
+#mail{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    display: inline;
+
+}
+#detailpurchasetype{
+    position: absolute;
+    top: 15px;
+    left: 225.3px;
+    height: 18px;
+    width: 52px;
+    padding-top: 4px;
+    padding-left: 18px;
+    background-color: rgba(47, 181, 110, 1);
+    font-family: 'Antipasto';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);  
+}
+/*
+#detailpurchasetypepara{
+    position: relative;
+    top: 4px;
+    left: 18px;
+    font-family: 'Antipasto';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);   
+}*/
+
+#detailpurchasetype2{
+    position: absolute;
+    top: 15px;
+    left: 225.3px;
+    height: 18px;
+    width: 52px;
+    padding-top: 4px;
+    padding-left: 18px;
+    background-color: rgba(231, 93, 54, 1);
+    font-family: 'Antipasto';
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);  
+}
+.contactdetails{
+    display: inline;
+    position: relative;
+    top: 14px;
+    left: 50px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(198, 198, 198, 1);
+}
+.properties ul li #p1{
+    position: relative;
+    top: 0px;
+    left: 20px; 
+    display: inline;
+    color: rgba(225, 225, 225, 1);
+}
+.properties ul li #p2{
+    position: relative;
+    top: 0px;
+    left: 24px; 
+    display: inline;
+    color: rgba(225, 225, 225, 1);
+}
+.properties ul li #p3{
+    position: relative;
+    top: 0px;
+    left: 28px; 
+    display: inline;
+    color: rgba(225, 225, 225, 1);
+}
+.properties ul li h5{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    top: 0px;
+    left: 250px; 
+    display: inline;
+    color: rgba(225, 225, 225, 1);
+}
+.properties ul li h6{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    top: 0px;
+    left: 222px; 
+    display: inline;
+    color: rgba(225, 225, 225, 1);
+}
+
+.properties ul li #H{
+    position: relative;    
+    height: 14px;
+    width: 19px;
+    left: 5px;    
+}
+.properties ul li #I{
+    position: relative;   
+    height: 13px;
+    width: 15px; 
+    left: 5px;
+    
+}
+.properties ul li #J{
+    position: relative;    
+    height: 15px;
+    width: 11px;
+    left: 5px;
+    top: 5px;
+}
+#map1{
+    display: none;
+    position: absolute;
+    top: 6%;
+    left: 17%;
+    height: 650px;
+    width: 1100px;
+    background-color: rgba(0, 0, 0, 1);
+}
+#mapcloseout{
+    position: absolute;
+    top: -6%;
+    left: 0px;
+    height: 50px;
+    width: 125px;
+    background-color: rgba(0, 0, 0, 1);
+}
+#mapsearch{
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(47, 181, 110, 1);    
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(56, 55, 55, 1);
+}
+
+#mapclose{
+    position: absolute;
+    top: -6.4%;
+    left: 100%;
+    height: 42px;
+    width: 42px;
+    background-color: rgba(40, 140, 86, 1);
+}
+#mapcloseimage{
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    height: 24px;
+    width: 25px;
+}
+
+#map{
+    position: absolute;
+    top: 2%;
+    left: 1.3%;
+    height: 96%;
+    width: 97.4%;
+    
+}
+#map_canvas{background-color:yellow !important}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detailproperties{
+    position: absolute;
+    overflow: hidden;
+    top: 11.7%;
+    left: 0px;
+    width: 100%;
+    height: 82%;
+    background-color: rgba(11, 11, 11, 1);
+}
+.detailproperties2{
+    position: absolute;
+    overflow: hidden;
+    top: 2%;
+    right: 0px;
+    width: 99%;
+    height: 98%;
+    background-color: rgba(22, 22, 22, 1);
+}
+#detailimage{
+    position: absolute;
+ 
+    width: 61.3%;
+    height: 72%;
+}
+.detailimagedescription{
+    position: relative;
+    left: 62.3%;
+    width: 700px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 1);
+}
+#detailimageabout{
+    position: absolute;
+    left: 62.3%;
+    top: 43%;
+    width: 654px;
+    height: 336px;
+    background-color: rgba(11, 11, 11, 1);
+    padding: 12px 18px;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+#detailimagesend{
+    position: absolute;
+    top: 74.5%;
+    height: 110px;
+    width: 61.3%;
+    background-color: rgba(35, 35, 35, 1);
+}
+.detailpara{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 650px;
+    height: auto;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+}
+.detailpara2{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 650px;
+    height: auto;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 5px;
+}
+#detailimagelocation{
+    position: relative;
+    top: 25px;
+    left: 27px;
+    height: 31px;
+    width: 26px;
+}
+#detailcity{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(184, 184, 184, 1);
+    top: -29px;
+    left: 80px;    
+}
+#detailprice{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    top: -55px;
+    left: 80px;    
+    letter-spacing: 1.5px;
+}
+
+#detailimagearea{
+    position: relative;
+    top: 25px;
+    left: 27px;
+    height: 25px;
+    width: 26px;
+}
+#detailimageareapara{
+    position:absolute; 
+    top:3px; 
+    left:80px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(184, 184, 184, 1);    
+}
+#detailareadiv{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    height: 30px;
+    width: 200px;
+    
+}
+
+#detailarea{
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1); 
+}
+
+#detailareaunit{
+    padding-left: 3px;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);  
+}
+
+#detailimagebedrooms{
+    position: relative;
+    top: 25px;
+    left: 27px;
+    height: 19px;
+    width: 27px;    
+}
+#detailbedrooms{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    top: -8px;
+    left: 80px;    
+}
+#detailimagebathrooms{
+    position: relative;
+    top: 25px;
+    left: 27px;
+    height: 24px;
+    width: 27px;    
+}
+#detailbathrooms{
+    position: relative;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    top: -12px;
+    left: 80px;    
+}
+#detailmail{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    display: inline;
+}
+.contactdetails2{
+    display: inline;
+    position: relative;
+    top: 34px;
+    left: 50px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(198, 198, 198, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#addproperty{
+
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 11%;
+    height: 89%;
+    width: 75%;
+    background-color: rgba(11, 11, 11, 1);
+}
+#addproperty2{
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+    height: 97%;
+    width: 98%;
+    background-color: rgba(22, 22, 22, 1);    
+}
+#addpropertyheading{
+    position: relative;
+    top: 3%;
+    left: 2.5%;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);    
+    display:inline;
+}
+#addpropertybasic{
+    position: absolute;
+    top: 7%;
+    left: 27%;
+    text-decoration: none;
+    font-family: 'Antipasto';
+    font-size: 20px;
+    color: rgba(44, 166, 101, 1);
+    border-bottom: 2px solid ;
+    border-color:  rgba(44, 166, 101, 1);
+
+    
+}
+#addpropertydetails{
+    position: absolute;
+    top: 7%;
+    left: 42%;
+    text-decoration: none;
+    font-family: 'Antipasto';
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+
+}
+#wantdiv{
+    position: relative;
+    top: 9%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);    
+}
+#wantpara{
+    position: relative;
+    top: 1px;
+    left: 22px;
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1); 
+    padding: 2px;   
+}
+
+#addsell{
+    position: relative;
+    top: 12%;
+    left: 22.5%;
+    height: 26px;
+    width: 26px;
+    
+}
+#addrent{
+    position: relative;
+    top: 12%;
+    left: 47%;
+    height: 26px;
+    width: 26px;
+
+}
+#typediv{
+    position: relative;
+    top: 14%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);    
+}
+#addcommercial{
+    position: relative;
+    top: 18%;
+    left: 6%;  
+    height: 25px;
+    width: 26px;
+    cursor: pointer;
+}
+#addfurnished{
+    position: relative;
+    top: 18%;
+    left: 14.5%;  
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+#addland{
+    position: relative;
+    top: 18%;
+    left: 23%;  
+    height: 26px;
+    width: 30px;
+    cursor: pointer;
+}
+#addcommercialpara{
+    position: absolute;
+    top: 35%;
+    left: 4.4%;    
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(232, 232, 232, 1);  
+    display: inline;  
+}
+#addfurnishedpara{
+    position: absolute;
+    top: 35%;
+    left: 14%;  
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(232, 232, 232, 1);  
+    display: inline;    
+}
+#addlandpara{
+    position: absolute;
+    top: 35%;
+    left: 26%;  
+    font-family: 'Antipasto';
+    font-size: 14px;
+    color: rgba(232, 232, 232, 1); 
+    display: inline;     
+}
+#photodiv{
+    position: relative;
+    top: 21.5%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#addphoto{
+    position: relative;
+    top: 25%;
+    left: 5.4%;  
+    height: 25px;
+    width: 29px;    
+}
+#output{
+    position: absolute;
+    top: 48.8%;
+    left: 9%;
+    width: 70px;
+    
+}
+#addphotopara{
+    position: absolute;
+    top: 50.8%;
+    left: 4.4%;  
+    font-family: 'Antipasto';
+    font-size: 12px;
+    color: rgba(230, 230, 230, 1); 
+    
+}
+#addressdiv{
+    position: relative;
+    top: 26.5%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#locationcorousal{
+    position: absolute;
+    top: 63.7%;
+    left: 29%;
+    height: 20px;
+    width: 20px;    
+}
+.widefieldlocation{
+    position: absolute; 
+    top: 62%; 
+    left: 33%; 
+    height: 45px;
+    width: 350px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+
+  } 
+.wideFieldcity {
+    position: absolute;
+    top: 69.5%;
+    left: 4.4%;
+    height: 45px;
+    width: 350px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+  }
+.slimFieldstate {
+    position: absolute;
+    top: 69.5%;
+    left: 33%;
+    height: 45px;
+    width: 350px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+  }
+.wideFieldzip {
+    position: absolute;
+    top: 77.5%;
+    left: 4.4%;
+    height: 45px;
+    width: 350px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.wideFieldcountry {
+    position: absolute;
+    top: 77.5%;
+    left: 33%;
+    height: 45px;
+    width: 350px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+#addnext{
+    position: absolute; 
+    top: 93%;
+    left: 38%;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);   
+    text-decoration: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#addpropertyse{
+    display: none;    
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 11%;
+    height: 89%;
+    width: 75%;
+    background-color: rgba(11, 11, 11, 1);
+}
+#addproperty2se{
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+    height: 97%;
+    width: 98%;
+    background-color: rgba(22, 22, 22, 1); 
+    line-height: 24px;  
+}
+#addpropertybasic2{
+    position: relative;
+    top: 3.5%;
+    left: 27%;
+    text-decoration: none;
+    font-family: 'Antipasto';
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+#addpropertydetails2{
+    position: relative;
+    top: 3.5%;
+    left: 30.5%;
+    text-decoration: none;
+    font-family: 'Antipasto';
+    font-size: 20px;
+    color:  rgba(44, 166, 101, 1);
+    border-bottom: 2px solid ;
+    border-color:  rgba(44, 166, 101, 1);
+
+}
+.askingprice {
+    position: relative;
+    top: 6.8%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.bathroomdrop{
+    
+    position: relative;
+    top: 2.2%;
+    left: 32%;
+    height: 35px;
+    width: 350px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.bedroomdrop{
+   
+    position: relative;
+    /*top: 3%;*/
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+select {
+    display: none; /*hide original SELECT element: */
+  }
+.select-selected6 {
+    background-color: rgba(22, 22, 22, 1);
+  }
+
+/* Style the arrow inside the select element: */
+.select-selected6:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgba(152, 152, 152, 1) transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected6.select-arrow-active:after {
+    border-color: transparent transparent rgba(152, 152, 152, 1) transparent;
+    top: 7px;
+  }
+  
+   /* style the items (options), including the selected item: */
+   .select-selected6 {
+    position: relative;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid ;
+    border-color:  rgba(140, 140, 140, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    height: 28px;   
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    
+  }
+  .select-items6 div{
+    cursor: pointer;
+    padding: 9px 0px;
+    border: 1px solid ;
+    border-color:  rgba(140, 140, 140, 1);
+    font-family: Antipasto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+    text-align: center; 
+  }
+  .select-items6 {
+    position: absolute;
+    background-color: rgba(22, 22, 22, 1);   
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .select-hide {
+    display: none;
+  }
+
+
+#areadiv{
+    position: absolute;
+    top: 27%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+
+.builtuparea {
+    position: absolute;
+    top: 33%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotlength {
+    position: absolute;
+    top: 33%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotarea {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.carpetarea {
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotbreadth {
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+    height: 35px;
+    width: 331px;
+    border: 1px solid ;
+    padding-left:16px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.builtupareaunit{
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotlengthunit{
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotareaunit{
+    position: absolute;
+    top: 33%;
+    left: 77.5%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.carpetareaunit{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.plotbreadthunit{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    height: 35px;
+    width: 100px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+
+
+#transactiontypediv{
+    position: absolute;
+    top: 47.2%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#resale{
+    position: relative;
+    top: 31%;
+    left: 27.5%;
+    height: 26px;
+    width: 26px;
+    
+}
+#newbooking{
+    position: relative;
+    top: 31%;
+    left: 48.8%;
+    height: 26px;
+    width: 26px;
+
+}
+.propertyfloor{
+    position: absolute;
+    top: 58%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.opensides{
+    position: absolute;
+    top: 58%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.ownership{
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+}
+.totalfloors{
+    position: absolute;
+    top: 65.3%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+    
+}
+.boundarywallmade{
+    position: absolute;
+    top: 65.3%;
+    left: 4.5%;
+    height: 35px;
+    width: 350px;   
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    background-color: rgba(22, 22, 22, 1);
+    
+}
+#availabilitydiv{
+    position: absolute;
+    top: 72%;
+    left: 2.5%;
+    height: 29px;
+    width: 95%;
+    background-color: rgba(41, 41, 41, 1);     
+}
+#readytomove{
+    position: absolute;
+    top: 75%;
+    left: 7.5%;
+    height: 26px;
+    width: 26px;
+    
+}
+#underconstruction{
+    position: absolute;
+    top: 75%;
+    left: 48.8%;
+    height: 26px;
+    width: 26px;
+
+}
+.descriptionn {
+    position: absolute;
+    top: 81%;
+    left: 4.5%;
+    height: 40px;
+    width: 331px;
+    padding-top: 7px;
+    border: 1px solid ;
+    padding-left:16px;
+    padding-bottom: 40px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);    
+    border-color:  rgba(140, 140, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}
+
+#postad{
+    position: absolute;
+    top: 93%;
+    left: 4.5%;
+    height: 45px;
+    width: 120px;
+    background-color: rgba(47, 181, 110, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);    
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+}
+
+.testing input[type='radio'] {
+    display: none;
+  }
+
+  
+.testing label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 1px solid rgba(104, 104, 104, 1);
+    background-color: transparent;
+    
+}
+.testing input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    content: " "; 
+    display: block;
+    background: rgba(47, 181, 110, 1);
+}
+#addwelcome{
+    position: absolute;
+    top: 32%;
+    left: 100px;
+    font-family: 'Antipasto';
+    font-size: 50px;
+    color: rgba(255, 255, 255, 1);
+}
+#addintro{
+    position: absolute;
+    left: 100px;
+    top: 41%;
+    width: 661px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;    
+}
+
+.form7{
+    position: absolute;
+    top: 59%;
+    left: 100px;
+    height: 300px;
+    width: 660px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myaccount{
+    display: none;
+    position: absolute;
+    top: 11%;
+    left: 76%;
+    height: 89%;
+    width: 24%;
+    background-color: rgba(11, 11, 11, 1);
+}
+#myaccount2{
+    position: absolute;
+    left: 3%;
+    top: 1.5%;
+    height: 97%;
+    width: 94%;
+    background-color: rgba(22, 22, 22, 1);   
+}
+#myaccounthead{
+    height: 8%;
+    width: 100%;
+    background-color: rgba(43, 43, 43, 1);
+}
+#myaccountheading{
+    position: absolute;
+    top: 1.7%;
+    left: 35%;
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);   
+    letter-spacing: 1px;
+}
+.close3{
+    position: absolute;
+    top: 1.2%;
+    left: 88%; 
+    color: rgba(216, 216, 216, 1);   
+    font-size: 37px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#myprofile{
+    height: 7%;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 1);
+    border: none;
+    letter-spacing: 1px;
+    font-family: 'Antipasto';
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);   
+    cursor: pointer;
+}
+#myprofile:hover{
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#logout{
+    height: 7%;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 1);
+    border: none ;
+    letter-spacing: 1px;
+    font-family: 'Antipasto';
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);   
+    cursor: pointer;   
+}
+#logout:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myaccountoutline{
+    overflow: hidden;
+    /*scrollbar-width: none;*/
+    position: absolute;
+    left: 0px;
+    top: 11%;
+    height: 89%;
+    width: 75%;
+    background-color: rgba(11, 11, 11, 1);
+}
+#myaccountoutline2{
+    overflow: scroll;
+    /*scrollbar-width: none;*/
+    position: absolute;
+    left: 1%;
+    top: 1.5%;
+    height: 100%;
+    width: 98%;
+    background-color: rgba(22, 22, 22, 1);
+    
+}
+#myaccountmyprofile{
+    height: 28%;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 1);
+}
+#circle{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    background-color: yellow;
+    height: 125px;
+    width: 125px;
+    border-radius: 125px;
+}
+#userprofilepic{
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    border-radius: 125px;    
+}
+#nameimage{
+    position: absolute;
+    height: 22px;
+    width: 18px;
+    top: 6.8%;
+    left: 18%;   
+}
+#namepara{
+    position: absolute;
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: rgba(206, 206, 206, 1);
+    font-family: 'Roboto', sans-serif;
+    top: 6.6%;
+    left: 22%;   
+}
+#phoneimage{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 6.8%;
+    left: 48%;   
+}
+#phonepara2{
+    position: absolute;
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: rgba(206, 206, 206, 1);
+    font-family: 'Roboto', sans-serif;
+    top: 6.6%;
+    left: 52%;   
+}
+#emailimage{
+    position: absolute;
+    height: 14px;
+    width: 18px;
+    top: 12.8%;
+    left: 18%;   
+}
+#emailpara{
+    position: absolute;
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: rgba(206, 206, 206, 1);
+    font-family: 'Roboto', sans-serif;
+    top: 12%;
+    left: 22%;   
+}
+#addressimage{
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    top: 12%;
+    left: 48%;   
+}
+#myaccountaddressparadiv{
+    top: 12%;
+    left: 52%;
+    position: absolute;
+    height: 120px;
+    width: 500px;
+
+    line-height: 24px;
+}
+#myaccountaddresspara{
+    position: absolute; 
+    font-size: 18px;
+    color: rgba(206, 206, 206, 1);
+    font-family: 'Roboto', sans-serif;
+}
+#editprofileimagediv{
+    position: absolute;
+    top: 0px;
+    left: 96.25%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(45, 44, 44, 1);    
+}
+#editprofileimage{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 27%;
+    left: 29%;   
+    cursor: pointer;
+}
+
+
+
+
+
+#myaccountul{
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+#myaccountli{
+    position: relative;
+    list-style: none;
+    top: 68px;
+    float: left;
+    width: 96.5%;
+    height: 207px;
+    padding-bottom: 15px;
+    margin: 20px 20px 0px 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(56, 55, 55, 1);
+}
+#my{
+    position: relative;
+    top: 2.5%;
+    left: 1.6%;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+#mypro{
+    position: relative;
+    top: 2.5%;
+    left: 1.6%;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(47, 181, 110, 1);
+}
+
+#editpropertyimagediv{
+    position: absolute;
+    top: 0px;
+    left: 92.35%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(35, 35, 35, 1);
+}
+#editpropertyimage{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 27%;
+    left: 29%;   
+    cursor: pointer;
+}
+#editpropertydeletediv{
+    position: absolute;
+    top: 0px;
+    left: 96.25%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(45, 44, 44, 1);
+}
+#editpropertydelete{
+    position: absolute;
+    height: 24px;
+    width: 20px;
+    top: 27%;
+    left: 30%;   
+    cursor: pointer;
+}
+#confirmdelete{
+    position: absolute;
+    display: none;
+    top: 38%;
+    left: 22%;
+    height: 282px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);  
+}
+#confirmdeletehead{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    height: 64px;
+    width: 480px;
+    background-color: rgba(43, 43, 43, 1);   
+}
+#confirmdeleteheading{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(240, 240, 240, 1);    
+}
+#confirmdeletedata{
+    position: absolute;
+    top: 74px;
+    left: 9px;
+    height: 197px;
+    width: 480px;
+    background-color: rgba(30, 30, 30, 1);    
+}
+#confirmdeletealert{
+    position: absolute;
+    top: 25%;
+    left: 6.5%;
+    height: 32px;
+    width: 39px;   
+}
+#confirmdeletepara{
+    position: absolute;
+    top: 26.5%;
+    left: 23%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);     
+}
+#deletebutton{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    height: 42px;
+    width: 128px;
+    background-color: rgba(40, 140, 86, 1); 
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 22px;
+    color: rgba(216, 216, 216, 1);   
+    cursor: pointer;
+}
+#cancelbutton{
+    position: absolute;
+    top: 50%;
+    left: 53.5%;   
+    height: 42px;
+    width: 128px;
+    background-color: rgba(216, 216, 216, 1);  
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 22px;
+    color: rgba(30, 30, 30, 1);  
+    cursor: pointer;     
+}
+#my2{
+    position: relative;
+    top: 12%;
+    left: 1.6%;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+#myshortlist{
+    position: relative;
+    top: 12%;
+    left: 1.6%;
+    font-family: 'Antipasto';
+    font-size: 24px;
+    color: rgba(47, 181, 110, 1);
+}
+#myshortlistli{
+    position: relative;
+    list-style: none;
+    top: 68px;
+    float: left;
+    width: 96.5%;
+    height: 207px;
+    padding-bottom: 15px;
+    margin: 20px 20px 0px 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(56, 55, 55, 1);
+}
+#confirmremoveshortlist{
+    position: absolute;
+    display: none;
+    top: 38%;
+    left: 22%;
+    height: 282px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);  
+}
+#removeshortlistbutton{
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    height: 42px;
+    width: 128px;
+    background-color: rgba(40, 140, 86, 1); 
+    border: 1px solid ;
+    border-color:  rgba(56, 55, 55, 1);
+    font-family: 'Antipasto';
+    font-size: 22px;
+    color: rgba(216, 216, 216, 1);   
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sendmail{
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+#sendmail2{
+    position: absolute;
+    background-color: rgba(30, 30, 30, 1);
+    height: 95.5%;
+    width: 95%;
+}
+#sendmailhead{
+    position: absolute;
+    background-color: rgba(43, 43, 43, 1);
+    height: 12%;
+    width: 100%;
+
+}
+#sendmailheading{
+    position: absolute;
+    left: 38%;
+    top: 20%;
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+.closemail{
+    position: absolute;
+    top: 7px;
+    left: 90%;
+    color: rgba(216, 216, 216, 1);   
+    font-size: 37px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#emailname{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#emailnameinput{
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    height: 30px;
+    width: 334px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    padding-left: 10px;
+    letter-spacing: 1px;
+
+}
+#emailemail{
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#emailmailinput{
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    height: 30px;
+    width: 334px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+#emailtext{
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#emailtextinput{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    height: 120px;
+    width: 334px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    padding-top: 5px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+#emailsend{
+    position: absolute;
+    top: 85%;
+    left: 42%;
+    height: 30px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1); 
+    background-color: rgba(40, 140, 86, 1);
+    border: 1px solid rgba(210, 210, 210, 1);
+}
+
+
+#phonenumberdiv{
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+#phonenumberdiv2{
+    position: absolute;
+    background-color: rgba(30, 30, 30, 1);
+    height: 95.5%;
+    width: 95%;
+}
+#phonenumberhead{
+    position: absolute;
+    background-color: rgba(43, 43, 43, 1);
+    height: 12%;
+    width: 100%;
+
+}
+#phonenumberheading{
+    position: absolute;
+    left: 34%;
+    top: 20%;
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+#phoneparadiv{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    height: 40%;
+    width: 80%;
+
+}
+#phonepara{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: 'Antipasto';
+    font-size: 22px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+#phonename{
+    font-family: 'Antipasto';
+    font-size: 26px;
+    font-weight: 900;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 2px;   
+}
+#phonenum{
+/*    position: absolute;
+    left: 38%;
+    top: 40%;*/
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 2px;    
+}
+
+
+
+
+
+
+
+
+
+#editlabelname{
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editname{    
+    position: absolute;    
+    top: 65px;
+    left: 5%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#editnameerror{
+    position: absolute;
+    top: 110px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+#editlabelprofilepic{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editphoto{    
+    position: absolute;    
+    top: 80px;
+    left: 50%;
+    height: 25px;
+    width: 29px;
+
+}
+#output2{
+    position: absolute;
+    top: 70px;
+    left: 53%;
+    width: 70px;
+    
+}
+
+
+#editlabelemail{
+    position: absolute;
+    top: 130px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editemail{    
+    position: absolute;   
+    top: 155px;
+    left: 5%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#editemailerror{
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    font-family: 'Antipasto';
+    color: red;
+    font-weight: bold;
+}
+#currentlabelpass{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#currentpass{    
+    position: absolute;   
+    top: 155px;
+    left: 50%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#currentpassworderror{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    font-family: 'Antipasto';
+    color: red;
+    font-weight: bold;
+}
+
+
+#editlabelphone{
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editphone{    
+    position: absolute;    
+    top: 245px;
+    left: 5%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#editphonenoerror{
+    position: absolute;
+    top: 290px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#newlabelpass{
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#newpass{    
+    position: absolute;    
+    top: 245px;
+    left: 50%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#newpassworderror{
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+
+
+#editlabeladdressfield1{
+    position: absolute;
+    top: 310px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editaddress1{    
+    position: absolute;    
+    top: 335px;
+    left: 5%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#editaddressfielderror1{
+    position: absolute;
+    top: 380px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#citylabel{
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editcity{    
+    position: absolute;    
+    top: 335px;
+    left: 50%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#cityerror{
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+
+
+#editlabeladdressfield2{
+    position: absolute;
+    top: 400px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editaddress2{    
+    position: absolute;    
+    top: 425px;
+    left: 5%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#editaddressfielderror2{
+    position: absolute;
+    top: 470px;
+    left: 5%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+#districtlabel{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#editdistrict{    
+    position: absolute;    
+    top: 425px;
+    left: 50%;
+    height: 40px;
+    width: 400px;
+    color:white;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+}
+#districterror{
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+#save{
+    position: absolute;
+    top: 520px;    
+    left: 35%;
+    height: 40px;
+    width: 200px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(40, 140, 86, 1);
+    font-family: 'Antipasto';
+    font-size: 18px;
+    color: rgba(216, 216, 216, 1);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#forgotpassworddiv{
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+#forgotpassworddiv2{
+    position: absolute;
+    background-color: rgba(30, 30, 30, 1);
+    height: 95.5%;
+    width: 95%;
+}
+#forgotpasswordhead{
+    position: absolute;
+    height: 60px;
+    width: 498px;
+    background-color: rgba(43, 43, 43, 1);
+
+}
+#forgotpasswordheading{
+    position: absolute;
+    left: 34%;
+    top: 20%;
+    font-family: 'Antipasto';
+    font-size: 30px;
+    color: rgba(240, 240, 240, 1);
+    letter-spacing: 1px;
+}
+#forgotmailemail{
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+}
+#forgotmailinput{
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    height: 35px;
+    width: 334px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: rgba(30, 30, 30, 1);
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1);
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+#forgotsubmit{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    height: 30px;
+    width: 70px;
+    font-family: 'Antipasto';
+    font-size: 16px;
+    color: rgba(244, 244, 244, 1); 
+    background-color: rgba(40, 140, 86, 1);
+    border: 1px solid rgba(210, 210, 210, 1);
+    letter-spacing: 1.5px;
+}
+#forgotpassworddivse{
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 714px;
+    height: 541px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0px;
+    padding: 12px;
+}
+
+
+
+
+
+
